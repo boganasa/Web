@@ -1,0 +1,136 @@
+html {
+    scroll-behavior: smooth;
+}
+
+ul, li {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.button, .menu a{
+    font-family: Comic Sans MS, Comic Sans, Magneto, serif ;
+    font-size: 16px;
+    font-weight: 900;
+
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #024959;
+    color: #D4F0F4;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.menu a:hover, .search-form button:hover{
+    background-color: #3F9BA6;
+}
+
+.search-form input[type="text"] {
+    width: 200px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #024959;
+    color: #D4F0F4;
+    border: none;
+    border-radius: 10px;
+}
+
+.div_header {
+    width: 100%;
+    overflow: hidden;
+    background-color: #D4F0F4;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.h1_header:hover {
+    font-size: 57px;
+}
+
+.h1_header {
+    color: #024959;
+
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 55px;
+    font-weight: 900;
+
+    padding:0 35px 0 100px;
+
+    display: inline-block;
+    float: revert;
+}
+
+.headers {
+    color: #024959;
+
+    padding-top: 10px;
+
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+.logo {
+    display: inline-block;
+    float: left;
+}
+
+.menu_back, .background{
+    width: 100%;
+    overflow: hidden;
+    background-color: #3F9BA6;
+}
+
+.menu_back{
+    position: relative;
+    z-index: 1;
+    margin-top: -25px;
+}
+
+.text_in_box, .menu{
+    overflow: hidden;
+
+    background-color: #D4F0F4;
+
+    font-family: Comic Sans MS, Comic Sans, Magneto, serif ;
+    font-size: 16px;
+    font-weight: 900;
+
+    border-radius: 20px;
+}
+
+.menu {
+    padding: 10px 10px;
+    margin: 55px 25px 25px 25px;
+}
+
+.text_in_box{
+    padding: 10px 10px 0 10px;
+    margin: 50px 25px 25px 25px;
+}
+
+.about_us_text {
+    width: 65%;
+    float: left;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about_us_image {
+    width: 35%;
+    float: left;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: 8px solid #024959;
+    border-radius: 20px;
+    box-shadow: 5px 1px 10px #2A8097;
+
+    transform: scale(0.8);
+}
