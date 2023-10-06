@@ -111,8 +111,15 @@ ul, li {
 }
 
 .text_in_box{
+    color: #254C5E;
     padding: 10px 10px 0 10px;
     margin: 50px 25px 25px 25px;
+
+    line-height: 20px;
+    text-align: justify;
+    text-indent: 0;
+    word-spacing: 5px;
+
 }
 
 .about_us_text {
@@ -133,4 +140,22 @@ ul, li {
     box-shadow: 5px 1px 10px #2A8097;
 
     transform: scale(0.8);
+}
+
+.footer_background{
+    background-color: #024959;
+    margin-top: -23px;
+}
+
+.text_in_footer{
+    color: #D4F0F4;
+    font-family: Comic Sans MS, Comic Sans, Magneto, serif ;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 20px;
+    text-align: justify;
+    text-indent: 0;
+    word-spacing: 5px;
+
+    padding: 10px;
 }
