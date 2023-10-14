@@ -62,7 +62,6 @@ ul, li {
     padding:0 35px 0 100px;
 
     display: inline-block;
-    float: revert;
 }
 
 .headers {
@@ -159,3 +158,4 @@ ul, li {
 
     padding: 10px;
 }
+
