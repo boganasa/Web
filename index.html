@@ -3,6 +3,9 @@
 <head>
     <title>Dust Busters</title>
     <link href="outlines.css" rel="stylesheet">
+    <script src="scripts/scroll_menu.js"></script>
+    <script src="scripts/active_menu.js"></script>
+    <script src="scripts/load.js"></script>
     <meta charset="utf-8">
     <meta name="keywords" content="уборка, клининг, грязь, тараканы">
     <meta name="description" content="Быстрая уборка у вас дома. Чище, чем у мамы">
@@ -10,10 +13,10 @@
 <body>
 <header>
     <div class="div_header">
-        <h1 class="h1_header">
+        <a href="index.html"><h1 class="h1_header">
             DUST BUSTERS
-        </h1>
-        <img class="logo" src="makets/логотип.png" alt="Очень симпотичный логотип с антижиром, который очищает все вокруг">
+        </h1></a>
+        <a href="index.html"><img class="logo" src="makets/логотип.png" alt="Очень симпотичный логотип с антижиром, который очищает все вокруг"></a>
     </div>
     <div class="menu_back">
         <nav class="menu">
@@ -22,7 +25,7 @@
                 <li><a href="#history">История возникновения</a></li>
                 <li><a href="#">Услуги</a></li>
                 <li><a href="#">До/После</a></li>
-                <li><a href="#">Отзывы</a></li>
+                <li><a href="feedback.html">Отзывы</a></li>
                 <li>
                     <form class="search-form" action="/search" method="GET">
                         <label>
@@ -44,11 +47,11 @@
 <main>
     <div class="preview">
         <div class="preview_img"><img src="makets/preview-img6.png" alt="img1"></div>
-        <div class="preview_img"><img src="makets/preview-img3.png" alt="img1"></div>
-        <div class="preview_img"><img src="makets/preview-img2.png" alt="img1"></div>
-        <div class="preview_img"><img src="makets/preview-img4.png" alt="img1"></div>
-        <div class="preview_img"><img src="makets/preview-img5.png" alt="img1"></div>
-        <div class="preview_img"><img src="makets/preview-img1.png" alt="img1"></div>
+        <div class="preview_img"><img src="makets/preview-img3.png" alt="img2"></div>
+        <div class="preview_img"><img src="makets/preview-img2.png" alt="img3"></div>
+        <div class="preview_img"><img src="makets/preview-img4.png" alt="img4"></div>
+        <div class="preview_img"><img src="makets/preview-img5.png" alt="img5"></div>
+        <div class="preview_img"><img src="makets/preview-img1.png" alt="img6"></div>
     </div>
     <div class="background">
         <div class="text_in_box">
@@ -143,25 +146,5 @@
         </div>
     </div>
 </footer>
-<script>
-    var prevScrollPos = window || document.documentElement.scrollTop;
-
-    window.addEventListener('scroll', function() {
-        var menuBack = document.querySelector('.menu_back');
-        var headerHeight = document.querySelector('.div_header').offsetHeight;
-        var currentScrollPos = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (currentScrollPos > headerHeight) {
-            menuBack.classList.add('sticky');
-            menuBack.style.top = '0px';
-        }
-        else {
-            menuBack.classList.remove('sticky');
-            menuBack.style.top = '';
-        }
-
-        prevScrollPos = currentScrollPos;
-    });
-</script>
 </body>
 </html>
