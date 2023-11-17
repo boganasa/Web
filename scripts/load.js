@@ -6,6 +6,6 @@
         var loadTime = end - start;
 
         var footer = document.querySelector('footer');
-        footer.innerHTML += '<div class="footer_background"><p class="text_in_footer">Страница загрузилась за ' + loadTime + ' миллисекунд.</p></div>';
+        footer.innerHTML += '<div class="footer_background" style="margin-top: -20px"><p class="text_in_footer">Страница загрузилась за ' + loadTime + ' миллисекунд.</p></div>';
     });
 })();

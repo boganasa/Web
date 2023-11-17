@@ -3,9 +3,10 @@
 <head>
     <title>Dust Busters</title>
     <link href="outlines.css" rel="stylesheet">
-    <script src="scripts/scroll_menu.js"></script>
-    <script src="scripts/active_menu.js"></script>
-    <script src="scripts/load.js"></script>
+    <link href="service.css" rel="stylesheet">
+    <script src="scripts/scroll_menu.js" defer></script>
+    <script src="scripts/active_menu.js" defer></script>
+    <script src="scripts/load.js" defer></script>
     <meta charset="utf-8">
     <meta name="keywords" content="уборка, клининг, грязь, тараканы">
     <meta name="description" content="Быстрая уборка у вас дома. Чище, чем у мамы">
@@ -23,9 +24,9 @@
             <ul>
                 <li><a href="#about">О компании</a></li>
                 <li><a href="#history">История возникновения</a></li>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">До/После</a></li>
-                <li><a href="feedback.html">Отзывы</a></li>
+                <li><a href="#service">Услуги</a></li>
+                <li><a href="#before_after">До/После</a></li>
+                <li><a href="feedback.html#feedback">Отзывы</a></li>
                 <li>
                     <form class="search-form" action="/search" method="GET">
                         <label>
@@ -40,7 +41,6 @@
     <style>
         .sticky {
             position: fixed;
-            top: 0;
         }
     </style>
 </header>
@@ -55,8 +55,8 @@
     </div>
     <div class="background">
         <div class="text_in_box">
-            <section class="about_us_text">
-                <h2 class="headers" id="about">
+            <section class="about_us_text" id="about">
+                <h2 class="headers">
                     О компании
                 </h2>
                 <p>
@@ -78,8 +78,8 @@
             <img src="makets/фото_о_компании.jpg" alt="фото идеальной кухни" class="about_us_image">
         </div>
 
-        <article class="text_in_box">
-            <h3 class="headers" id="history">
+        <section class="text_in_box" id="history">
+            <h3 class="headers">
                 История возникновения компании
             </h3>
             <p>
@@ -100,40 +100,82 @@
             <p>
                 Их история напоминает, что даже самая "крутая чистка" может начаться с маленькой мечты и большой страсти.
             </p>
-        </article>
-    </div>
-    <div class="table">
-        <table>
-            <thead>
-            <tr>
-                <th>Критерий</th>
-                <th>Dust Busters</th>
-                <th>Others</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Цена</td>
-                <td>Дёшево</td>
-                <td>Дорого</td>
-            </tr>
-            <tr>
-                <td>Доступность</td>
-                <td>По всем городам</td>
-                <td>Локально</td>
-            </tr>
-            <tr>
-                <td>Качество</td>
-                <td>Чисто</td>
-                <td>Грязно</td>
-            </tr>
-            <tr>
-                <td>Команда</td>
-                <td>Добрый, приветливый коллектив</td>
-                <td>...</td>
-            </tr>
-            </tbody>
-        </table>
+        </section>
+
+        <section id="service">
+            <div class="text_in_box" >
+                <h2 class="headers">
+                    Услуги
+                </h2>
+                <div class="service">
+                    <div class="service_item">
+                        <div class="service_img"><img src="makets/service-img3.png" alt="img1"></div>
+                        <div style="margin-top: -35px" >
+                            <h3>Уборка коммерческих помещений</h3>
+                            <a href="#" class="button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="service_item">
+                        <div class="service_img"><img src="makets/service-img5.png" alt="img1"></div>
+                        <div style="margin-top: -35px" >
+                            <h3>Уборка "под ключ"</h3>
+                            <a href="#" class="button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="service_item">
+                        <div class="service_img"><img src="makets/service-img2.png" alt="img1"></div>
+                        <div style="margin-top: -35px" >
+                            <h3>Уборка после ремонта</h3>
+                            <a href="#" class="button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="service_item">
+                        <div class="service_img"><img src="makets/service-img4.png" alt="img1"></div>
+                        <div style="margin-top: -35px" >
+                            <h3>Генеральная уборка</h3>
+                            <a href="#" class="button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="service_item">
+                        <div class="service_img"><img src="makets/service-img1.png" alt="img1"></div>
+                        <div style="margin-top: -35px" >
+                            <h3>Уборка санузла и ванной</h3>
+                            <a href="#" class="button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="service_item">
+                        <div class="service_img"><img src="makets/service-img6.png" alt="img1"></div>
+                        <div style="margin-top: -35px" >
+                            <h3>Поддерживающая убрка</h3>
+                            <a href="#" class="button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="service_item">
+                        <div class="service_img"><img src="makets/service-img7.png" alt="img1"></div>
+                        <div style="margin-top: -35px" >
+                            <h3>Уборка кухни</h3>
+                            <a href="#" class="button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="service_item">
+                        <div class="service_img"><img src="makets/service-img8.png" alt="img8"></div>
+                        <div style="margin-top: -35px" >
+                            <h3>Мытьё окон</h3>
+                            <a href="#" class="button">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="before_after">
+            <div class="text_in_box" >
+                <h2 class="headers">
+                    ДО / ПОСЛЕ
+                </h2>
+                <img src="makets/before-after-img1.png" alt="img" style="width: 100%">
+            </div>
+        </section>
     </div>
 </main>
 <footer>
