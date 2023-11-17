@@ -164,13 +164,6 @@ ul, li {
 }
 
 
-
-@media screen and (min-width: 768px) {
-    .menu_back {
-        position: fixed;
-    }
-}
-
 @media screen and (min-height: 3800px) {
     footer{
         position: fixed;
@@ -227,39 +220,12 @@ ul, li {
     }
 }
 
-
-tr:nth-child(even) {
-    background-color: #D4E0F5;
-    color: #254C5E;
-
-    font-family: Monotype Corsiva, cursive;
-    font-size: 20px;
+.preview {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 200px;
 }
 
-tr:nth-child(odd) {
-    background-color: #D4F0F4;
-    color: #254C5E;
-    font-family: Arial, cursive;
-}
-
-.table {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin-bottom: 25px;
-}
-
-table {
-    width: 100%;
-}
-
-th, td {
-    padding: 8px;
-    text-align: center;
-}
-
-td:first-child, th {
-    background-color: #254C5E;
-    color: #D4F0F4;
-    font-family: "Times New Roman", serif ;
-    font-size: 16px;
+.menu a.active {
+    background-color: mediumaquamarine;
 }
