@@ -11,15 +11,13 @@ function restoreScheduleFromLocalStorage() {
         document.getElementById('work_days').value = workDays;
         document.getElementById('number').value = number;
         generateSchedule(new Event('submit'));
-    }
-    else if(workDays && number && selectedDay && selectedTime && selectedProcedure) {
-        document.getElementById('work_days').value = workDays;
-        document.getElementById('number').value = number;
-        document.getElementById('selectedDay').value = selectedDay;
-        document.getElementById('selectedTime').value = selectedTime;
-        document.getElementById('selectProcedure').value = selectedProcedure;
-        generateSchedule(new Event('submit'));
-        addProcedure(new Event('submit'))
+
+        if (selectedDay && selectedTime && selectedProcedure) {
+            document.getElementById('selectDay').value = selectedDay;
+            document.getElementById('selectTime').value = selectedTime;
+            document.getElementById('selectProcedure').value = selectedProcedure;
+            addProcedure(new Event('submit'));
+        }
     }
 }
 
