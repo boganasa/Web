@@ -1,18 +1,16 @@
 <!DOCTYPE HTML>
 <html lang="ru">
 <head>
-    <title>Dust Busters</title>
+    <title>Dust Busters feedback</title>
     <link href="outlines.css" rel="stylesheet">
+    <link href="service.css" rel="stylesheet">
+<!--    <script src="scripts/scroll_menu.js" defer></script>-->
     <script src="scripts/active_menu.js" defer></script>
     <script src="scripts/load.js" defer></script>
-    <script src="scripts/table_script.js" defer></script>
-    <script src="scripts/select_script.js" defer></script>
-    <script src="scripts/save_local_schedule.js" defer></script>
-    <script src="scripts/delete_schedule.js" defer></script>
-<!--    <script src="scripts/add_in_schedule.js" defer></script>-->
+    <script src="scripts/feedback_script.js"></script>
     <meta charset="utf-8">
-    <meta name="keywords" content="отзывы, оценка, отличная уборка, Dust Busters">
-    <meta name="description" content="отзывы на компанию Dust Busters">
+    <meta name="keywords" content="уборка, клининг, грязь, тараканы">
+    <meta name="description" content="Быстрая уборка у вас дома. Чище, чем у мамы">
 </head>
 <body>
 <header>
@@ -27,75 +25,25 @@
             <ul>
                 <li><a href="index.html#about">О компании</a></li>
                 <li><a href="index.html#history">История возникновения</a></li>
-                <li><a href="index.html#before_after">Услуги</a></li>
-                <li><a href="index.html#service">До/После</a></li>
-                <li><a href="#feedback">Расписание</a></li>
-                <li>
-                    <form class="search-form" action="/search" method="GET">
-                        <label>
-                            <input type="text" name="search" placeholder="Поиск услуги">
-                        </label>
-                        <button type="submit" class="button">Найти</button>
-                    </form>
-                </li>
+                <li><a href="index.html#service">Услуги</a></li>
+                <li><a href="index.html#before_after">До/После</a></li>
+                <li><a href="timetable.html#timetable">Расписание</a></li>
+                <li><a href="feedback.html">Отзывы</a></li>
             </ul>
         </nav>
     </div>
     <style>
         .sticky {
             position: fixed;
-            top: 0;
         }
     </style>
 </header>
 <main>
-    <section id="feedback">
-        <h2 class="div_header">Создайте свое расписание плановой уборки</h2>
-        <form id="tableForm" class="schedule"  onsubmit="generateSchedule(event)">
-            <label for="work_days">Составить расписание на:</label>
-            <select id="work_days">
-                <option value="" selected disabled hidden>Выберите период</option>
-                <option value="full">полную неделю</option>
-                <option value="work">рабочие дни</option>
-                <option value="weekends">выходные</option>
-            </select>
-            <label for="number">Количество уборок за цикл:</label>
-            <input type="number" id="number" name="number" min="0" max="0">
-            <button type="submit">Создать расписание</button>
-            <button type="button" onclick="deleteSchedule()">Удалить расписание</button>
-        </form>
-        <form id="scheduleForm" class="schedule" onsubmit="addProcedure(event)">
-            <label for="selectDay">Выбрать день:</label>
-            <select id="selectDay">
-                <option value="" selected disabled hidden>Выберите день</option>
-                <option value="понедельник">понедельник</option>
-                <option value="вторник">вторник</option>
-                <option value="среда">среда</option>
-                <option value="четверг">четверг</option>
-                <option value="пятница">пятница</option>
-                <option value="суббота">суббота</option>
-                <option value="воскресенье">воскресенье</option>
-            </select>
+    <div id="preloader">
+        <img src="makets/load_gif.gif" alt="Загрузка...">
+    </div>
+    <div id="feedback"><!-- Здесь будут отображаться комментарии --></div>
 
-            <label for="selectTime">Выбрать время:</label>
-            <input type="time" id="selectTime">
-
-            <label for="selectProcedure">Выбрать процедуру:</label>
-            <select id="selectProcedure">
-                <option value="Уборка коммерческих помещений">Уборка коммерческих помещений</option>
-                <option value="Уборка 'под ключ'">Уборка "под ключ"</option>
-                <option value="Уборка после ремонта">Уборка после ремонта</option>
-                <option value="Генеральная уборка">Генеральная уборка</option>
-                <option value="Уборка санузла и ванной">Уборка санузла и ванной</option>
-                <option value="Поддерживающая убрка">Поддерживающая убрка</option>
-                <option value="Уборка кухни">Уборка кухни</option>
-                <option value="Мытьё окон">Мытьё окон</option>
-            </select>
-
-            <button type="submit">Добавить</button>
-        </form>
-        <div id="tableContainer"></div>
-    </section>
 </main>
 <footer>
     <div class="footer_background">
