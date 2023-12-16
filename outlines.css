@@ -11,6 +11,19 @@ ul, li {
     padding-right: 5px;
 }
 
+.small_button {
+    font-family: Comic Sans MS, Comic Sans, Magneto, serif ;
+    font-size: 10px;
+    font-weight: 600;
+
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: #024959;
+    color: #D4F0F4;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 .button, .menu a{
     font-family: Comic Sans MS, Comic Sans, Magneto, serif ;
     font-size: 16px;

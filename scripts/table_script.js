@@ -35,6 +35,7 @@ function generateSchedule(event) {
 
     const scheduleForm = document.getElementById('scheduleForm');
     if (scheduleForm) {
+        showOK()
         scheduleForm.addEventListener('submit', addProcedure);
     }
 
@@ -69,16 +70,29 @@ function addProcedure(event) {
             localStorage.setItem('selectedDay', selectedDay);
             localStorage.setItem('selectedTime', selectedTime);
             localStorage.setItem('selectedProcedure', selectedProcedure);
+
         } else {
             alert('Ошибка: День недели не найден в расписании!');
         }
     } else {
         alert('Ошибка: Таблица расписания не найдена!');
     }
-
     const selectProcedure = document.getElementById('selectProcedure');
-    if (selectProcedure) {
-        selectProcedure.addEventListener('submit', addProcedure);
-    }
 }
 
+// скрипт для вывода сообщения о том, что все в прядке. Высвечиваетсч при создании события
+function showOK() {
+    iziToast.show({
+        title: 'OK!',
+        message: 'Уборка успешна сохранена',
+        position: 'topRight',
+        backgroundColor: '#254C5E',
+        titleColor: '#D4F0F4',
+        messageColor: '#D4F0F4',
+        progressBarColor: '#D4F0F4',
+        messageLineHeight: '10px',
+        messageTextAlign: 'justify',
+        messageTextIndent: '0',
+        messageWordSpacing: '5px'
+    });
+}
